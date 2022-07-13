@@ -7,7 +7,7 @@
 
 > Greeting app with a Ruby on Rails backend and React frontend.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./app_screenshot.gif)
 
 ## Built with
 

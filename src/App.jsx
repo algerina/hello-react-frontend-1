@@ -1,16 +1,15 @@
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Greeting from './components/Greeting';
 import './App.css';
 
 function App() {
   return (
-    <div className='outer-container'>
+    <div className='router-container'>
       <div className='inner-container'>
-        <BrowserRouter>
-          <Routes>
-            <Route path='/' element={<Greeting />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Greeting />} />
+        </Routes>
       </div>
     </div>
   );

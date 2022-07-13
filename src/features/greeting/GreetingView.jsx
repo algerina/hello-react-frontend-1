@@ -12,17 +12,17 @@ const GreetingView = () => {
   }, []);
 
   return (
-    <div>
-      <h3>Random Greeting:</h3>
+    <>
+      <h3>Refresh to change!</h3>
       {greeting.loading && <div>Loading...</div>}
       {!greeting.loading && greeting.error ? (
         <div>Error: {greeting.error}</div>
       ) : null}
       {!greeting.loading && !greeting.error && greeting.greeting ? (
-        <div>{greeting.greeting.greeting}</div>
+        <h2>{greeting.greeting.greeting}</h2>
       ) : null}
-      
-    </div>
+
+    </>
   );
 };
 

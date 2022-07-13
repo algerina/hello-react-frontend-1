@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className='router-container'>
+    <div className='outer-container'>
       <div className='inner-container'>
         <Routes>
           <Route path='/' element={<GreetingView />} />

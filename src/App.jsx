@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { Routes, Route } from 'react-router-dom';
-import Greeting from './components/Greeting';
+import GreetingView from './features/greeting/GreetingView';
 import './App.css';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className='router-container'>
       <div className='inner-container'>
         <Routes>
-          <Route path='/' element={<Greeting />} />
+          <Route path='/' element={<GreetingView />} />
         </Routes>
       </div>
     </div>
